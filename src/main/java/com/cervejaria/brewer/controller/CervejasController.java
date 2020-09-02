@@ -18,8 +18,6 @@ public class CervejasController {
 
 	@GetMapping("/novo")
 	public String novo(Cerveja cerveja) {
-		System.out.println("teste");
-
 		return "cerveja/cadastroCerveja";
 	}
 
@@ -36,9 +34,4 @@ public class CervejasController {
 		}
 	}
 	
-	@GetMapping("/cadastro")
-	public String cadastro(Model model) {
-		model.addAttribute(new Cerveja());
-		return "cerveja/cadastro-produto";
-	}
 }
