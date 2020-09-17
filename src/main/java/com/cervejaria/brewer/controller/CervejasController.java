@@ -46,11 +46,6 @@ public class CervejasController {
 	public ModelAndView cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes attr) {
 		
 		if (result.hasErrors()) {
-			model.addAttribute(cerveja);
-			System.out.println("DEU ERRO**********");
-			System.out.println(result.getErrorCount());
-			System.out.println(result.getAllErrors());
-			
 			return novo(cerveja);
 		} else {
 			

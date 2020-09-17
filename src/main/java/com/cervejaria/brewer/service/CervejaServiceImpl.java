@@ -1,11 +1,14 @@
 package com.cervejaria.brewer.service;
 
+import java.util.Optional;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cervejaria.brewer.model.Cerveja;
+import com.cervejaria.brewer.model.Estilo;
 import com.cervejaria.brewer.repository.CervejaRepository;
 
 @Service
@@ -23,5 +26,5 @@ public class CervejaServiceImpl implements CervejaService {
 	public void save(Cerveja cerveja) {
 		repository.save(cerveja);	
 	}
-
+	
 }

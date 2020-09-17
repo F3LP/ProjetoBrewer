@@ -10,4 +10,7 @@ public interface EstiloService {
 	List<Estilo> findAll();
 
 	Optional<Estilo> finById(Long codigo);
+	
+	Estilo save(Estilo estilo);
+	
 }

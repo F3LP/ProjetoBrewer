@@ -1,4 +1,4 @@
-package com.cervejaria.brewer.controller.converter;
+package com.cervejaria.brewer.conversor;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
@@ -8,7 +8,7 @@ public class StringToInteger implements Converter<String, Integer> {
 
 	@Override
 	public Integer convert(String text) {
-		text = text.trim();
+		text = text.replace(".", "").trim();
 		
 		if (text.matches("[0-9]+")){
 			return Integer.valueOf(text);

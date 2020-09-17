@@ -1,4 +1,4 @@
-package com.cervejaria.brewer.controller.converter;
+package com.cervejaria.brewer.conversor;
 
 import java.math.BigDecimal;
 
